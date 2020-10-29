@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+    --heading-font: 'Playfair Display', serif;
+    --body-font: 'Poppins', sans-serif;
+    --first-color: #4564E5;
+    --first-color-hover: #1e348d;
+    --black-color: #1A1C29;
+    --paragraph-color: #575863;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.navbar-brand {
+    font-family: var(--heading-font);
+}
+
+section,
+footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.title-section {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.subtitle {
+    color: var(--first-color);
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.subtitle::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 30px;
+    width: 60px;
+    height: 2px;
+    margin: auto;
+    background-color: var(--first-color);
+}
+
+.title {
+    text-align: center;
+}
+
+.btn-first {
+    color: #fff;
+    background-color: var(--first-color);
+    border-radius: 0;
+}
+
+.btn-white {
+    color: var(--first-color);
+    background-color: #fff;
+    border-radius: 0;
+}
+
+.btn-first:hover {
+    color: #fff;
+    background-color: var(--first-color-hover);
+}
+
+/* 404 ERROR */
+.error-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.error-page h1 {
+    font-size: 72px;
+}
+
+/* NAVBAR */
+.navbar {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    background: #FFFFFF;
+    transition: .5s;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.navbar-toggler {
+    outline: none;
+    border: none;
+}
+
+.navbar-toggler:hover {
+    outline: none;
+}
+
+/* BANNER */
+.banner .jumbotron {
+    background-image: url('../image/1.jpeg');
+    background-size: cover;
+    height: 100vh;
+    margin-top: 76px;
+    margin-top: 0;
+    border-radius: 0;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.banner .jumbotron .display-4 {
+    font-size: 72px;
+    font-weight: 700;
+}
+
+.banner .jumbotron form {
+    background-color: #ffffff78;
+    padding: 30px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 80%;
+    margin: 100px auto 0;
+}
+
+.banner .jumbotron form label {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--black-color);
+}
+
+.banner .jumbotron form input {
+    border-radius: 0;
+}
+
+.banner .jumbotron form button {
+    margin-top: 30px;
+    width: 100%;
+}
+
+/* CARD */
+.card {
+    background-color: #FFFFFF;
+    padding: 40px;
+    border: none;
+    border-radius: 0;
+    transition: .5s;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.card:hover {
+    box-shadow: 0px 10px 60px rgba(71, 82, 126, 0.15);
+}
+
+.featured .card .card-icon {
+    padding: 10px;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    background: var(--first-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.featured .card .card-icon i {
+    font-size: 24px;
+    color: white;
+}
+
+.card .card-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--black-color);
+}
+
+.card .card-description,
+.card .card-price {
+    color: var(--paragraph-color);
+}
+
+.card .card-img {
+    overflow: hidden;
+}
+
+.card .btn-first {
+    padding: 10px 24px;
+}
+
+.card .card-img-top {
+    transition: .5s;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+/* ROOM */
+.room {
+    background-color: #f8f8f8;
+}
+
+.room .card {
+    padding: 0 0 20px;
+}
+
+/* GALLERY */
+.gallery .img-gallery {
+    margin-top: 30px;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.gallery-page .img-gallery {
+    margin-top: 30px;
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+/* FACILITIES */
+.facilities {
+    background-color: #F8F8F8;
+}
+
+.facilities .facility .card {
+    padding: 0 0 20px
+}
+
+.facilities .facility .card .card-img-top {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.facilities .facility .card .card-description {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* CONTACT HOME */
+.contact-home {
+    background: linear-gradient(0deg, rgba(69, 100, 229, .9), rgba(69, 100, 229, .9)), url(../image/3.jpeg);
+    background-size: cover;
+    color: #FFFFFF;
+}
+
+.contact-home h3 {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.contact-home p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #d3d3d3
+}
+
+.contact-home .btn-white {
+    padding: 14px 24px;
+    font-weight: 600;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #FFFFFF;
+    padding-bottom: 10px;
+}
+
+.footer .col-md-5 {
+    padding-right: 100px;
+}
+
+.footer .logo-footer,
+.footer .footer-title {
+    color: var(--black-color);
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.footer p,
+.footer li a {
+    color: var(--paragraph-color);
+    margin-top: 30px;
+}
+
+.footer ul {
+    margin-top: 30px;
+}
+
+.footer ul li {
+    margin-top: 20px;
+}
+
+.footer-copyright {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-copyright p,
+.footer-copyright a {
+    font-size: 14px;
+    color: var(--paragraph-color);
+}
+
+.footer-copyright a {
+    margin-left: 30px;
+}
+
+/* OTHER PAGE */
+.banner-page .jumbotron {
+    height: 50vh;
+    background-size: cover;
+    background-position: center center;
+    margin-top: 76px;
+    margin-bottom: 0;
+    border-radius: 0;
+    color: #FFFFFF;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    section,
+    footer {
+        padding: 50px 20px;
+    }
+
+    .subtitle {
+        margin-bottom: 20px;
+    }
+
+    .banner .jumbotron .display-4 {
+        font-size: 50px;
+    }
+
+    .banner .jumbotron form {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    /* GALLERY */
+
+    .gallery .img-gallery {
+        height: 100px;
+    }
+
+    /* FOOTER */
+    .footer .col-md-5 {
+        padding-right: 0;
+    }
+
+    .footer-copyright {
+        display: block;
+        text-align: center;
+    }
+
+    .footer-copyright a {
+        margin-top: 10px;
+        margin-left: 0;
+        display: inline-block;
+    }
+}
