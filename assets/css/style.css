@@ -133,6 +133,11 @@ footer {
 }
 
 /* BANNER */
+.banner {
+    margin-top: 76px;
+    margin-bottom: 0;
+}
+
 .banner .jumbotron {
     background-image: url('../image/1.jpeg');
     background-size: cover;
@@ -364,6 +369,95 @@ footer {
     align-items: center;
 }
 
+/* ROOM DETAIL PAGE */
+.room-detail .carousel .carousel-inner .carousel-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.room-detail .room-facilities {
+    background: #f3f3f3;
+    padding: 10px;
+    margin-top: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.room-detail .room-facilities .icon {
+    padding: 10px;
+    background: #FFF;
+    text-align: center;
+    margin: 14px;
+
+    width: 16%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.room-detail .room-facilities .icon img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.room-detail .room-facilities .icon .facility-title {
+    font-size: 12px;
+}
+
+.room-detail .room-description {
+    margin-top: 20px;
+}
+
+.room-detail .room-description p {
+    color: var(--paragraph-color);
+}
+
+.room-detail .room-info {
+    margin-top: 40px;
+    position: relative;
+}
+
+.room-detail .room-info .detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    border-bottom: 1px solid var(--paragraph-color);
+}
+
+.room-detail .room-info .detail p {
+    margin-bottom: 4px;
+}
+
+/* .room-detail .room-info .detail::after {
+    width: 100%;
+    height: 1px;
+    background-color: var(--paragraph-color);
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    content: '';
+} */
+
+.room-detail .book {
+    padding: 50px 30px;
+    background-color: var(--first-color);
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 991px) {
+    .room-detail .room-facilities .icon {
+        width: 20%;
+    }
+}
+
 @media screen and (max-width: 768px) {
 
     section,
@@ -404,5 +498,11 @@ footer {
         margin-top: 10px;
         margin-left: 0;
         display: inline-block;
+    }
+
+    /* ROOM DETAIL */
+    .room-detail .room-facilities .icon {
+        padding: 5px;
+        width: 44%;
     }
 }
