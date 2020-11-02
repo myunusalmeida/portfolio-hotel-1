@@ -434,22 +434,21 @@ footer {
     margin-bottom: 4px;
 }
 
-/* .room-detail .room-info .detail::after {
-    width: 100%;
-    height: 1px;
-    background-color: var(--paragraph-color);
-
-    position: absolute;
-    bottom: 0;
-    left: 0;
-
-    content: '';
-} */
-
 .room-detail .book {
     padding: 50px 30px;
     background-color: var(--first-color);
     color: #FFFFFF;
+}
+
+.room-detail .direct-reservation {
+    padding: 50px 30px;
+    background-color: #f3f3f3;
+    margin-top: 35px;
+}
+
+.room-detail .direct-reservation p {
+    margin-top: 30px;
+    color: var(--paragraph-color)
 }
 
 @media screen and (max-width: 991px) {
@@ -503,6 +502,6 @@ footer {
     /* ROOM DETAIL */
     .room-detail .room-facilities .icon {
         padding: 5px;
-        width: 44%;
+        width: 42%;
     }
 }
